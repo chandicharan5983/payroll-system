@@ -66,4 +66,8 @@ html, body {
     padding: 20px;
     overflow-y: auto; /* Allow main content to scroll if needed */
   }
+
+  .details-popup {
+    z-index: 2;
+  }
   
