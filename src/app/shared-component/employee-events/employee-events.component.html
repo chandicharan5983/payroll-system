@@ -1,5 +1,5 @@
 <!-- birthday-list.component.html -->
-<div class="birthday-list-container">
+<div class="birthday-list-container" [class.no-data]="!usersEventList?.length">
     <!-- <h2>Birthday List</h2> -->
     <div *ngIf="usersEventList?.length" class="birthday-list">
       <div class="birthday-item" *ngFor="let person of (usersEventList | dateOfBirthSort)">

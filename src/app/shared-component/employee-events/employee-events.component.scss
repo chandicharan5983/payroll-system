@@ -46,13 +46,21 @@
     text-align: center; /* Align the name in the center */
   }
 
+  .no-data {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100%; /* Set the height of the container to make vertical centering work */
+    
+    /* Optionally, you can set additional styles for the container */
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    
+    /* Set the maximum width of the image if you want */
     img {
-        border-radius: 5px;
-        padding: 10px;
-        min-height: 150px;
-        max-height: 150px; /* Fix the height of each widget */
-        width: 200px;
-        justify-content: center; // Horizontally center the content
-        align-items: center;
+      max-width: 220px;
+      height: 180px;
     }
+  }
   
