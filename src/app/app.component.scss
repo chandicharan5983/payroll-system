@@ -12,11 +12,13 @@ html, body {
   }
   
   .top-bar-container {
-    background-color: #007bff;
+    background-color: #151f4679;
     color: #fff;
     padding: 10px;
+    height: 30px;
+    margin-top: 0px;
     cursor: pointer;
-    z-index: 100; /* Ensure top bar appears above other content */
+    // z-index: 100; /* Ensure top bar appears above other content */
   }
   
   .top-bar-container app-top-bar {
@@ -35,7 +37,6 @@ html, body {
   .top-bar-container app-top-bar .user-icon {
     width: 30px;
     height: 30px;
-    /* Add user icon styles here (e.g., display an icon using CSS background) */
   }
   
   /* If you are using the <img> tag for the user icon, style it like this */
@@ -55,9 +56,9 @@ html, body {
   
   .left-menu {
     background-color: #f0f0f0;
-    padding: 10px;
-    width: 200px;
-    flex: 0 0 200px;
+    // padding: 10px;
+    // width: 200px;
+    // flex: 0 0 200px;
     overflow-y: hidden; /* Allow left menu to scroll if needed */
   }
   

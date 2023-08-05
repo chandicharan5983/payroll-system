@@ -15,7 +15,6 @@ export class UserListComponent implements OnInit {
 
   ngOnInit() {
     this.employeesList =  this.apiCallService.getEmployeeList();
-    console.log("this.employeesList", this.employeesList)
   }
 
 
