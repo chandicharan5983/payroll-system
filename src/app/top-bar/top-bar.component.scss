@@ -1,0 +1,38 @@
+/* top-bar.component.scss */
+.top-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; /* Ensure it appears above other content */
+  }
+  
+  .top-bar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to opposite ends */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .payroll-banner {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .user-icon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* If you are using the <img> tag for the user icon, style it like this */
+  .user-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  

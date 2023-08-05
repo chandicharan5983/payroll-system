@@ -1,0 +1,83 @@
+<!-- user-details.component.html -->
+<div class="user-details-container">
+    <div class="user-card">
+      <div class="user-info-left">
+        <div class="user-image">
+          <img src="{{userDetails.image_url}}" alt="User Image">
+        </div>
+        <h3 class="user-name">{{userDetails.user_name}}</h3>
+      </div>
+      <div class="user-info-right">
+        <div class="user-box">
+          <h3 class="box-heading">Department</h3>
+          <p class="box-info">{{userDetails.user_department}}</p>
+          <!-- Add other information here -->
+        </div>
+
+          <div class="user-box">
+            <h3 class="box-heading">Joining Date</h3>
+            <p class="box-info">{{userDetails.user_joining_date}}</p>
+          </div>
+          <div class="user-box">
+            <h3 class="box-heading">PF Account Number</h3>
+            <p class="box-info">{{userDetails.user_PF_account}}</p>
+          </div>
+          <div class="user-box">
+            <h3 class="box-heading">Personal Account Number</h3>
+            <p class="box-info">{{userDetails.user_personal_account}}</p>
+          </div>
+          <div class="user-box">
+            <h3 class="box-heading">Higher Qualification</h3>
+            <p class="box-info">{{userDetails.user_higher_qualification}}</p>
+          </div>
+          <div class="user-box">
+            <h3 class="box-heading">Health Insurance Information</h3>
+            <p class="box-info">{{userDetails?.user_health_insurance?.policy_number}}</p>
+            <p class="box-info">{{userDetails?.user_health_insurance?.provider}}</p>
+            <p class="box-info">{{userDetails?.user_health_insurance?.validity}}</p>
+          </div>
+        <!-- Add other user-box elements for different information -->
+      </div>
+    </div>
+  </div>
+  
+
+
+<!-- <div class="user-details-container">
+    <div class="user-card">
+      <div class="user-image">
+        <img src="path/to/user-image.jpg" alt="User Image">
+      </div>
+      <div class="user-info">
+        <div class="user-box">
+          <h3 class="box-heading">User Name</h3>
+          <p class="box-info">User's Name</p>
+        </div>
+        <div class="user-box">
+          <h3 class="box-heading">Department</h3>
+          <p class="box-info">User Department</p>
+        </div>
+        <div class="user-box">
+          <h3 class="box-heading">Joining Date</h3>
+          <p class="box-info">User Joining Date</p>
+        </div>
+        <div class="user-box">
+          <h3 class="box-heading">PF Account Details</h3>
+          <p class="box-info">User PF Account Details</p>
+        </div>
+        <div class="user-box">
+          <h3 class="box-heading">Personal Account Details</h3>
+          <p class="box-info">User Personal Account Details</p>
+        </div>
+        <div class="user-box">
+          <h3 class="box-heading">Higher Qualification</h3>
+          <p class="box-info">User Higher Qualification</p>
+        </div>
+        <div class="user-box">
+          <h3 class="box-heading">Health Insurance Information</h3>
+          <p class="box-info">User Health Insurance Information</p>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->

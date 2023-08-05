@@ -1,0 +1,23 @@
+<!-- user-list.component.html -->
+<div class="user-list-container">
+    <h2>User List</h2>
+    <div class="user-table">
+      <div class="user-row heading-row">
+        <div class="user-cell">Name</div>
+        <div class="user-cell">Employee ID</div>
+        <div class="user-cell">Role</div>
+        <div class="user-cell">Department</div>
+        <div class="user-cell">Email</div>
+      </div>
+      <div class="user-list-scroll">
+        <div class="user-row" *ngFor="let user of employeesList">
+          <div class="user-cell">{{ user.name }}</div>
+          <div class="user-cell">{{ user.employee_id }}</div>
+          <div class="user-cell">{{ user.role }}</div>
+          <div class="user-cell">{{ user.department }}</div>
+          <div class="user-cell">{{ user.email }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

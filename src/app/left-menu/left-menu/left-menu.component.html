@@ -1,0 +1,12 @@
+<!-- left-menu.component.html -->
+<nav class="left-menu">
+    <ul>
+        <!-- {{menuList |json}} -->
+      <li *ngFor="let menu of menuList" [class.active]="currentUrl.includes(menu?.key ?? '')" (click)="navigateTo(menu?.key ?? '')">{{menu?.title}}</li>
+      <!-- <li (click)="navigateTo('user-list')">User List</li>
+      <li (click)="navigateTo('user-details')">User Details</li>
+      <li (click)="navigateTo('payslip')">Payslip</li>
+      <li (click)="navigateTo('tax-calculator')">Tax Calculator</li> -->
+    </ul>
+  </nav>
+  

@@ -1,0 +1,28 @@
+<!-- main-page.component.html -->
+<div class="main-page-container">
+    <div class="widget upcoming-holidays">
+      <!-- Content for Upcoming Holidays widget -->
+      <h2>Upcoming Holidays</h2>
+      <app-upcoming-holidays [holidayList]="holidayList"></app-upcoming-holidays>
+      <!-- Add your content here -->
+    </div>
+    <div class="widget birthdays">
+      <!-- Content for Birthdays widget -->
+      <h2>Birthdays</h2>
+      <app-employee-events [usersEventList]="usersDOB"></app-employee-events>
+      <!-- Add your content here -->
+    </div>
+    <div class="widget work-anniversaries">
+      <!-- Content for Work Anniversaries widget -->
+      <h2>Work Anniversaries</h2>
+      <app-employee-events [usersEventList]="[]"></app-employee-events>
+      <!-- Add your content here -->
+    </div>
+    <div class="widget quick-links">
+      <!-- Content for Quick Links widget -->
+      <h2>Quick Links</h2>
+      <app-quick-links [urlList]="urlList"></app-quick-links>
+      <!-- Add your content here -->
+    </div>
+  </div>
+  

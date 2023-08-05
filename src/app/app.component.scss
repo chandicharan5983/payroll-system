@@ -1,0 +1,69 @@
+/* app.component.scss */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-bar-container {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100; /* Ensure top bar appears above other content */
+  }
+  
+  .top-bar-container app-top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .top-bar-container app-top-bar .payroll-banner {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .top-bar-container app-top-bar .user-icon {
+    width: 30px;
+    height: 30px;
+    /* Add user icon styles here (e.g., display an icon using CSS background) */
+  }
+  
+  /* If you are using the <img> tag for the user icon, style it like this */
+  .top-bar-container app-top-bar .user-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+    // overflow: hidden; /* Hide any overflow content */
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .left-menu {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    flex: 0 0 200px;
+    overflow-y: hidden; /* Allow left menu to scroll if needed */
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto; /* Allow main content to scroll if needed */
+  }
+  

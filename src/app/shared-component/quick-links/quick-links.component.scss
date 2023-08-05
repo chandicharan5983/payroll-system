@@ -1,0 +1,35 @@
+/* birthday-list.component.scss */
+:host {
+    display: block;
+  }
+  
+  .url-list-container {
+    padding: 20px;
+  }
+  
+  .url-list {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .url-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .url-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .url-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for the date */
+  }
+  

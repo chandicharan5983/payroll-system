@@ -1,0 +1,76 @@
+/* user-details.component.scss */
+:host {
+    display: block;
+  }
+  
+  .user-details-container {
+    padding: 20px;
+  }
+  
+  .user-card {
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .user-info-left {
+    flex-basis: 30%; /* Width of left section */
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .user-info-right {
+    flex-basis: 70%; /* Width of right section */
+    overflow-y: auto; /* Enable vertical scrolling for the right section */
+  }
+  
+  .user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image covers the entire space */
+    margin-bottom: 10px;
+    position: static;
+
+  }
+
+  img {
+    height: 250px;
+    border-radius: 25%;
+    margin-left: 50px;
+  }
+  
+  .user-name {
+    font-size: 32px;
+    margin-left: 75px;
+    margin-top: 195px;
+    font-weight: bold;
+  }
+  
+  .user-box {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .box-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .box-info {
+    font-size: 16px;
+    color: #333;
+  }
+  

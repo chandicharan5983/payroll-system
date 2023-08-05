@@ -1,0 +1,58 @@
+/* birthday-list.component.scss */
+:host {
+    display: block;
+  }
+  
+  .birthday-list-container {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .birthday-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .birthday-item {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .birthday-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .birthday-date {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for the date */
+  }
+  
+  .birthday-name {
+    font-size: 16px;
+    color: #333; /* Dark gray color for the name */
+    flex: 1; /* Add flex: 1 to make the name take remaining space */
+    text-align: center; /* Align the name in the center */
+  }
+
+    img {
+        border-radius: 5px;
+        padding: 10px;
+        min-height: 150px;
+        max-height: 150px; /* Fix the height of each widget */
+        width: 200px;
+        justify-content: center; // Horizontally center the content
+        align-items: center;
+    }
+  

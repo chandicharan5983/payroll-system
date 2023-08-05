@@ -1,0 +1,56 @@
+/* holiday-list.component.scss */
+:host {
+    display: block;
+  }
+  
+  .holiday-list-container {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .holiday-table {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .holiday-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .heading-row {
+    background-color: #636262;
+    display: flex;
+    position: sticky; /* Fix the heading row */
+    top: 0; /* Stick to the top */
+    position: sticky;
+  }
+  
+  .heading-cell {
+    font-weight: bold;
+    padding: 10px;
+    flex: 1;
+  }
+  
+  .holiday-row {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  .holiday-list-scroll {
+    max-height: 300px; /* Set a maximum height for the holiday list container */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+  }
+  
+  .holiday-cell {
+    padding: 10px;
+    flex: 1;
+  }
+  

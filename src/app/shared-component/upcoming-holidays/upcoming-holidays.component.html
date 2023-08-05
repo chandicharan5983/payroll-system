@@ -1,0 +1,21 @@
+
+<!-- holiday-list.component.html -->
+<div class="holiday-list-container">
+    <div class="holiday-table">
+      <ul class="holiday-list">
+        <li class="heading-row">
+          <span class="heading-cell">Day</span>
+          <span class="heading-cell">Date</span>
+          <span class="heading-cell">Leave Type</span>
+          <span class="heading-cell">Occasion</span>
+        </li>
+        <li class="holiday-row" *ngFor="let holiday of holidayList">
+          <span class="holiday-cell">{{ holiday.day }}</span>
+          <span class="holiday-cell">{{ holiday.date }}</span>
+          <span class="holiday-cell">{{ holiday.leave_type }}</span>
+          <span class="holiday-cell">{{ holiday.occasion }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

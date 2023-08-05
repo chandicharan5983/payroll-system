@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { USER_DETAILS } from './constant/api-response.constant';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'payroll-system';
+  showUserDetailsPopup: boolean = false;
+  userDetails = USER_DETAILS
+
+  onClickUserDetailsPopup(event: boolean): void {
+    this.showUserDetailsPopup = event;
+  }
 }

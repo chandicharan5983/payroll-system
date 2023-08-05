@@ -1,0 +1,8 @@
+<div class="url-list-container">
+    <div class="url-list">
+      <div class="url-item" *ngFor="let url of urlList" (click)="openUrl(url)">
+          <span class="url-title">{{ url?.title}}</span>
+      </div>
+    </div>
+  </div>
+  
