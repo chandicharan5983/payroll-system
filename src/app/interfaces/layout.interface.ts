@@ -10,4 +10,18 @@ export interface HOLIDAY_TYPE {
     occasion: string;
     leave_type: string;
   }
+
+  export interface Employee {
+    name: string;
+    loanAmount: number;
+    interestRate: number;
+    emi: number;
+    loanDeductions: LoanDeduction[];
+    salaryByMonth: { [month: string]: number };
+  }
+
+  export interface LoanDeduction {
+    month: string;
+    deductionAmount: number;
+  }
   

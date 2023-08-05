@@ -1,1 +1,27 @@
-<p>payslip works!</p>
+<!-- payslip-list.component.html -->
+<div class="payslip-list-container">
+    <h2 class="payslip-heading">Pay slip for the year</h2>
+    <table class="payslip-table">
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Employee ID</th>
+          <th>Role</th>
+          <th>Gross Salary</th>
+          <th>In-hand Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Add table rows for each month's payslip -->
+        <tr class="payslip-row" *ngFor="let pay of payslipList">
+          <td>{{pay.month}}</td>
+          <td>{{pay.id}}</td>
+          <td>{{pay.title}}</td>
+          <td>{{pay.gross_salary}}</td>
+          <td>{{pay.in_hand}}</td>
+        </tr>
+        <!-- Add more rows for other months -->
+      </tbody>
+    </table>
+  </div>
+  

@@ -450,5 +450,84 @@ export const USER_DETAILS = {
       "validity": "2024-12-31"
     }
   }
+
+  export const PAYSLIP_LIST = [
+    {
+      "id": 'EMP123',
+      "month": "January",
+      "title": "HR Associate",
+      "gross_salary": 15000,
+      "in_hand": 13000
+    },
+    {
+      "id": 'EMP123',
+      "month": "February",
+      "title": "HR Associate",
+      "gross_salary": 15200,
+      "in_hand": 14000
+    },
+    {
+      "id": 'EMP123',
+      "month": "March",
+      "title": "HR Associate",
+      "gross_salary": 15400,
+      "in_hand": 14500
+    },
+    {
+      "id": 'EMP123',
+      "month": "April",
+      "title": "HR",
+      "gross_salary": 40600,
+      "in_hand": 40000
+    },
+    {
+      "id": 'EMP123',
+      "month": "May",
+      "title": "HR",
+      "gross_salary": 58000,
+      "in_hand": 45000
+    },
+    {
+      "id": 'EMP123',
+      "month": "June",
+      "title": "HR",
+      "gross_salary": 56000,
+      "in_hand": 50100
+    },
+    {
+      "id": 'EMP123',
+      "month": "July",
+      "title": "HR",
+      "gross_salary": 47200,
+      "in_hand": 45300
+    }
+  ];
+
+
+export const EMPLOYEES_LOAN_DETAILS = [
+    {
+      name: 'John Doe',
+      loanAmount: 90000,
+      interestRate: 10,
+      emi: 5000,
+      loanDeductions: [
+        { month: 'May', deductionAmount: 5000 },
+        { month: 'June', deductionAmount: 5000 },
+        // Add more loan deductions for other months
+      ],
+      salaryByMonth: {
+        'January': 14000,
+        'February': 14000,
+        'March': 14500,
+        'April': 40000,
+        'May': 45000,
+        'June': 50100,
+        'July': 45300,
+        'August': 59000,
+        // Add salary data for other months
+      }
+    },
+    // Add more employees with their loan and salary details
+  ];
   
   

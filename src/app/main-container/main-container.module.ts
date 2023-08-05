@@ -8,6 +8,8 @@ import { TaxCalculatorComponent } from './tax-calculator/tax-calculator.componen
 import { EmployeeEventsComponent } from '../shared-component/employee-events/employee-events.component';
 import { UpcomingHolidaysComponent } from '../shared-component/upcoming-holidays/upcoming-holidays.component';
 import { QuickLinksComponent } from '../shared-component/quick-links/quick-links.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -21,6 +23,8 @@ import { QuickLinksComponent } from '../shared-component/quick-links/quick-links
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
+    FormsModule,
     EmployeeEventsComponent,
     QuickLinksComponent,
     UpcomingHolidaysComponent

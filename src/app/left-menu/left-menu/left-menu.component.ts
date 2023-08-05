@@ -32,7 +32,7 @@ export class LeftMenuComponent {
     this.router.events
       .pipe(filter((event: any) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        this.currentUrl = event.url;
+        this.currentUrl = event.url ?? 'main';
       });
   }
 

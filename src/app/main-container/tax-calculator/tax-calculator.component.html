@@ -1,1 +1,38 @@
-<p>tax-calculator works!</p>
+<!-- payslip-list.component.html -->
+<div class="loan-calculation-container">
+    <h2>Loan Calculation</h2>
+    <div class="employee-list">
+      <!-- Display a list of employees and their loan details -->
+      <div class="employee" *ngFor="let employee of employees">
+        <h3>{{ employee.name }}</h3>
+        <p>Loan Amount: {{ employee.loanAmount }}</p>
+        <p>Interest Rate: {{ employee.interestRate }}%</p>
+        <p>EMI: {{ employee.emi }}</p>
+        <button (click)="showDetailedCalculation(employee)">Detailed Calculation</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Detailed Calculation View Pop-up -->
+  <div class="popup" *ngIf="selectedEmployee && showPopup">
+    <button class="close-button" (click)="closePopup()">&times;</button>
+
+    <h3>Detailed Calculation View - {{ selectedEmployee.name }}</h3>
+    <p>Loan Amount: {{ selectedEmployee.loanAmount }}</p>
+    <p>Interest Rate: {{ selectedEmployee.interestRate }}%</p>
+    <p>EMI: {{ selectedEmployee.emi }}</p>
+    <!-- Display the loan deductions for each month -->
+    <div class="month-deductions" *ngFor="let deduction of selectedEmployee.loanDeductions">
+      <p>{{ deduction.month }} - Loan Deduction: {{ deduction.deductionAmount }}</p>
+    </div>
+    <!-- Select Month Dropdown -->
+    <div class="month-select">
+      <label for="monthSelect">Select Month:</label>
+      <select id="monthSelect" [(ngModel)]="selectedMonth" (change)="calculateTax(selectedEmployee)">
+        <option *ngFor="let month of months" [value]="month">{{ month }}</option>
+      </select>
+    </div>
+    <!-- Display Final Salary After Tax Deduction -->
+    <p>Final Salary After Tax Deduction: {{ finalSalary }}</p>
+  </div>
+  
