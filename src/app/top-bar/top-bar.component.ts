@@ -9,7 +9,10 @@ export class TopBarComponent {
 
   @Output() onClickUserDetailsPopup = new EventEmitter()
 
+  userDetailPopup: boolean = false;
+
   openUserDetailsPopup(event: boolean): void {
-    this.onClickUserDetailsPopup.emit(event);
+    this.userDetailPopup = !this.userDetailPopup;
+    this.onClickUserDetailsPopup.emit(this.userDetailPopup);
   }
 }
