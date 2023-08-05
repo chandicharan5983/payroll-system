@@ -438,7 +438,7 @@ export const USER_DETAILS = {
     "image_url": "./assets/images/user_image.jpg",
     "user_name": "John Doe",
     'phone_no': 9878976578,
-    'current_role': 'HR',
+    'current_role': 'Human Resources',
     "user_department": "Human Resources",
     "user_joining_date": "2022-01-15",
     "user_PF_account": "ABC12345",
